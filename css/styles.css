@@ -135,7 +135,6 @@ html {
 }
 
 .titulo-marketplace {
-  background-color: rgba(255, 255, 255, 0.795);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,29 +143,28 @@ html {
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: space-between;
-  
+          justify-content: center;
+  margin: 10px 10px;
 }
 
 .titulo-marketplace .logo-dex img {
   width: 200px;
-  padding: 0 10px;
 }
 
-.titulo-marketplace .titulo-dex h3 {
-  width: 200px;
-  font-size: 25px;
-  margin-top: 10px;
-  font-family: ubuntu;
+.titulo-marketplace .logo-dex .titulo-token {
+  font-style: italic;
+  font-size: 50px;
 }
 
-
+.info-login {
+  text-align: center;
+  background-color: aliceblue;
+}
 
 .box-token {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 5px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -176,21 +174,27 @@ html {
   text-align: center;
   font-size: large;
   background-color: aliceblue;
-  padding: 5px 5px;
+  padding: 5px 10px;
   width: auto;
   text-overflow: clip;
+  border-radius: 25px;
+  border: 1px solid black;
 }
 
 .box-token .boton-copiar {
-  background-color: aqua;
+  background-color: #60d394ff;
   border-radius: 5px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 5px 5px;
+  padding: 5px 10px;
   margin-left: 10px;
   width: auto;
   font-weight: bold;
+}
+
+.box-token .boton-copiar:hover {
+  background-color: #ff9b85ff;
 }
 
 .main-area section .galeria {

@@ -18,6 +18,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
   <!-- icono web -->
   <link rel="shortcut icon" href="../img/sandia.png">
+   <!-- Moralis SDK code -->
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+  <!-- Jquery src -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <!-- area de encabezado -->
@@ -54,7 +59,7 @@
           </ul>
         </div>
       </div>
-      <a href="https://www.tiktok.com/@sofiacocinaoficial?" target="_blank"><img class="img-menu" src="../img/metamask-icon.png" alt="metamask-icon"></a>          
+      <a><img id="btn-login" class="img-menu" src="../img/metamask-icon.png" alt="metamask-icon"></a>          
       <a href="https://www.tiktok.com/@sofiacocinaoficial?" target="_blank"><img class="img-menu" src="../img/tiktok.png" alt="icono-tiktok"></a>
       <a href="https://www.instagram.com/sofiacocinaoficial/?hl=es" target="_blank"><img class="img-menu" src="../img/insta.png" alt="icono-insta"></a>
       <a href="https://www.youtube.com/channel/UCdNXrC4x5i7mVlZ-j1ar9DA" target="_blank"><img class="img-menu" src="../img/youtube.png" alt="icono-youtube"></a>        
@@ -86,11 +91,19 @@
 
 <!-- Smart Contract -->
   <div class="box-token">
-    <p class="token-list center">0x000000000000000000000000</p>
-    <button id="copiar-smart-contract" type="button" class="boton-copiar">Copiar</button>
+    <p id ="n-contrato" class="token-list center">0x000000000000000000000000</p>
+    <button id="copiar-smart-contract" type="button" class="boton-copiar" onclick="copyToClickBoard()" >Copiar</button>
   </div>
 
 
+<!-- Login con metamask -->
+<div class="info-login">
+  <p>Para iniciar sesion con Metamask, debes agregar la extension en tu navegador favorito desde <a href="http://www.metamask.io" target="_blank">www.metamask.io</a></p>
+  <p>Luego haz click en el logo del zorro para conectar tu wallet</p>
+  <button id="btn-logout">Salir</button>
+  <button id="btn-get-stats">Refresh Stats</button>
+  <ul id="gas-stats"></ul>
+</div>
 
   <!-- Contenido web -->
   <main class="container-fluid main-area">       
@@ -101,8 +114,7 @@
           <img src="../img/nft1.png" alt="flanDeCoco">
           <h5>Descripción</h5>
           <ul class="listaIngredientes">
-            <li></li>
-            <li>50 SOFI</li>
+             <li>50 SOFI</li>
           </ul>
           <button class="btn btnColor btn-outline-dark ">
             Comprar
@@ -171,6 +183,7 @@
       </div>
     </div>
   </footer>
+  <script src="../js/Pre-entrega-con-Jquery.js"></script>
   <script src="../js/javascript.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>

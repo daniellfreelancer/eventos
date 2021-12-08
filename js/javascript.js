@@ -1,12 +1,14 @@
-// Creacion de evento copiar smart contract en el boton copiar
+button.addEventListener("click", copyToClickBoard );
 
+function copyToClickBoard(){
+    var content = document.getElementById('n-contrato').innerHTML;
 
-const button = document.querySelector(".boton-copiar");
-
-button.addEventListener("click", mensaje );
-
-function mensaje(){
-    alert("El contrato ha sido copiado con exito");
-    div.innerHTML = " El contrato se copio correctamente, ya podés comprar en los exchanges autorizados";
+    navigator.clipboard.writeText(content)
+        .then(() => {
+        alert("El contrato ha sido copiado con exito...")
+    })
+        .catch(err => {
+        console.log('Something went wrong', err);
+    })
+ 
 }
-

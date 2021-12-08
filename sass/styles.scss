@@ -123,7 +123,6 @@ html {
 }
 
 .titulo-marketplace {
-    background-color: aqua;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -131,7 +130,7 @@ html {
     margin: 10px 10px;
     
     .logo-dex {
-        margin-top:;
+        
         img { 
             width: 200px; 
         }
@@ -144,29 +143,41 @@ html {
 
 }
 
+.info-login {
+    text-align: center;
+    background-color: aliceblue;
+}
+
 
 
 
 .box-token {
     display: flex;
     justify-content: center;
+    
     .token-list {
         text-align: center;
         font-size: large;
         background-color: aliceblue;
-        padding: 10px 5px;
+        padding: 5px 10px;
         width: auto;
         text-overflow: clip;
+        border-radius: 25px;
+        border: 1px solid black;
     }
     .boton-copiar {
-        background-color: aqua;
+        background-color: #60d394ff;
         border-radius: 5px;
         height: fit-content;
-        padding: 5px 5px;
+        padding: 5px 10px;
         margin-left: 10px;
         width: auto;
         font-weight: bold;
+
     }
+    .boton-copiar:hover {
+        background-color: #ff9b85ff;
+    } 
 
 
 }
